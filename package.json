@@ -1,0 +1,24 @@
+{
+  "name": "single-page-design-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./input.css -o ./css/main.css",
+    "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivaberiashvili/single-page-design-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivaberiashvili/single-page-design-portfolio/issues"
+  },
+  "homepage": "https://github.com/ivaberiashvili/single-page-design-portfolio#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.7"
+  }
+}
