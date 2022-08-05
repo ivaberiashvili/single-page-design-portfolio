@@ -7,3 +7,16 @@
 html {
     font-family: 'Plus Jakarta Sans', sans-serif; 
 }
+/* this needs to here so that when the 
+new element is created,it get's properties from here */
+.images img{
+    border-radius: 8px;
+    transition: 0.3s;
+    max-height:180px;
+    width:78%;
+}
+@media (min-width:480px){
+    .images img{
+        max-height:360px;
+    } 
+}

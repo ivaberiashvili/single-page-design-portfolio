@@ -34,13 +34,15 @@
         <div class="rounded-lg h-[182px] col-span-2 xl:h-[158px] bg-darkpurple">Motion Graphics</div>
       </div>
   </section>
-  <section class="about container mx-auto max-w-[1190px] flex flex-col items-center md:flex-row md:justify-between bg-amber-100">
-    <div class="img-cont h-[300px] md:h-[364px] md:w-1/2 md:-ml-11">
+  <section class="about container mx-auto max-w-[1190px] flex flex-col items-center md:flex-row md:justify-between">
+    <div class="img-cont h-[300px] md:h-[364px] md:w-1/2 md:-ml-11 lg:h-[445px] lg:ml-0 lg:pl-10">
       <img class="h-full " src="./assets/image-amy.webp" alt="">
     </div>
-    <div class="text-cont md:w-1/2 text-center px-6  md:text-left md:pl-0 md:pr-10">
-      <h2 class="font-bold text-black text-[26px] leading-[33px] md:text-[32px] md:leading-10">I’m Amy, and I’d love to work on your next project</h2>
-      <p class="text-grey text-base leading-[26px] my-6">I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations 
+    <div class="text-cont text-center max-w-[520px] px-4 mt-10 md:w-1/2 md:text-left md:mt-0 md:pl-1.5 md:pr-10 lg:max-w-full">
+      <h2 class="font-bold text-black text-[26px] leading-[33px] md:text-[32px] md:leading-10
+      lg:text-[40px] lg;leading-[50px]">I’m Amy, and I’d love to work on your next project</h2>
+      <p class="text-grey text-base leading-[26px] my-6 md:text-[18px] md:leading-[28px]
+      lg:mt-[34px] lg:mb-8">I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations 
         to complete mobile apps. I’m also handy with a camera!</p>
       <button class="h-11 w-44 md:h-14 md:w-[228px] bg-coral rounded-full text-cream font-bold text-sm md:text-base
       hover:bg-tangerine duration-300" >Free Consultation</button>
@@ -48,21 +50,24 @@
   </section>
 
 
+  <section class="carousel mt-[100px] w-full flex flex-col gap-8 md:gap-14">
+    <h3 class="font-bold text-2xl text-center leading-[30px] md:text-[32px] md:leading-10">My Work</h3>
+    <div class="images w-full box-border flex flex-row justify-center gap-[15px] md:gap-[30px] overflow-hidden">
+      <img  src="./assets/image-slide-1.jpg" alt="">
+      <img  src="./assets/image-slide-2.jpg" alt="">
+      <img  src="./assets/image-slide-3.jpg" alt="">
+      <img  src="./assets/image-slide-4.jpg" alt="">
+      <img  src="./assets/image-slide-5.jpg" alt="">
+    </div>
+    <div class="arrows flex flex-row gap-4 justify-center">
+      <div class="prev arrow w-16 h-16 bg-black rounded-full flex flex-row items-center justify-center hover:bg-purple duration-300"><img src="./assets/icon-arrow-left.svg" alt=""></div>
+      <div class="next arrow w-16 h-16 bg-black rounded-full flex flex-row items-center justify-center hover:bg-purple duration-300"><img src="./assets/icon-arrow-right.svg" alt=""></div>
+    </div>
+  </section>
+
+
+
   
-
-
- 
- 
-  
- 
-  
-
-  
-
-
-  Free Consultation
-
-  My Work
 
   Book a call with me
 
@@ -74,4 +79,5 @@
   Free Consultation
 
 </body>
+<script src="./script.js"></script>
 </html>
