@@ -7,3 +7,17 @@
 html {
     font-family: 'Plus Jakarta Sans', sans-serif; 
 }
+/* this needs to here so that when the 
+new element is created,it get's properties from here */
+.images img{
+    border-radius: 8px;
+    transition: 0.3s;
+    max-height:180px;
+    max-width:540px; /* technically you don't need this in normal environment, but prevent's stretching when zoomed out a lot*/
+    width:78%; /* to define size before screen size exceeds image's actual size*/
+}
+@media (min-width:480px){
+    .images img{
+        max-height:360px;
+    } 
+}

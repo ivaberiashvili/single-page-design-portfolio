@@ -9,52 +9,96 @@
   <link rel="stylesheet" href="css/main.css">
   <title>Single-page design portfolio - Frontend Mentor</title>
 </head>
-<body class="font-medium bg-slate-200">
-  <nav class="container mx-auto max-w-[1190px] bg-cream p-4 sm:p-6 md:px-10 md:py-[38px]">
+<body class="font-medium bg-cream ">
+  <nav class="container mx-auto max-w-[1190px] p-4 sm:p-6 md:px-10 md:py-[38px]">
     <div class="flex flex-row justify-between items-center h-12">
       <img class="h-full"  src="./assets/logo.svg" alt="">
       <button class="h-11 w-44 md:h-14 md:w-[228px] bg-black rounded-full text-cream font-bold text-sm md:text-base
       hover:bg-purple duration-300" >Free Consultation</button>
     </div>
   </nav>
-  <section class="hero container mx-auto max-w-[1190px] bg-cream px-4 sm:px-6 md:px-10
-  flex flex-col items-center bg-red-200">
-      <div class="flex flex-col items-center text-center mt-2 mb-8 md:mt-10 md:mb-16 lg:mt-[42px] md:mb-20 bg-lime-200">
+  <section class="hero container mx-auto max-w-[1190px] px-4 sm:px-6 md:px-10
+  flex flex-col items-center pt-2 md:pt-10 lg:pt-[42px] pb-[100px] md:pb-[120px] lg:pb-[136px]">
+      <div class="flex flex-col items-center text-center mb-8 md:mb-16 md:mb-20">
         <h1 class="text-black text-4xl leading-[45px] md:text-[44px] md:leading-[55px] lg:text-[56px] lg:leading-[71px] font-bold">Design solutions made easy</h1>
         <p class="text-grey text-base leading-[26px] md:text-lg md:leading-[28px]
         px-7 sm:max-w-[485px] md:max-w-[620px] lg:max-w-[760px] mt-4 md:mt-[27px] lg:mt-[23px]">With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.
         </p>
       </div>
+      <div class="design-grid w-full grid gap-6 grid-cols-2 auto-rows-auto  md:grid-cols-4 xl:grid-cols-6
+      font-bold text-cream text-2xl leading-[30px]">
 
+        <div class="relative rounded-lg h-[364px] col-span-2 row-span-2 bg-purple">
+          <img class="absolute top-6 right-6" src="./assets/pattern-graphic-design.svg" alt="">
+           <h3 class="absolute left-6 bottom-6">Graphic Design</h3> 
+        </div>
+
+        <div class="relative rounded-lg h-[182px] md:row-span-0.5 bg-tangerine">
+          <img class="absolute top-6 right-6" src="./assets/pattern-ui-ux.svg" alt="">
+          <h3 class="absolute left-6 bottom-6">UI/UX</h3> 
+        </div>
+        <div class="relative rounded-lg h-[182px] bg-pink">
+          <img class="absolute top-6 right-6" src="./assets/pattern-apps.svg" alt="">
+          <h3 class="absolute left-6 bottom-6">Apps</h3></div>
+        <div class="relative rounded-lg h-[158px] col-span-2 xl:col-start-3 bg-coral">
+          <img class="absolute top-6 right-6" src="./assets/pattern-photography.svg" alt="">
+          <h3 class="absolute left-6 bottom-6">Photography</h3>
+        </div>
+        <div class="relative rounded-lg h-[182px] col-span-2 xl:col-start-5 xl:row-start-1 bg-cyan">
+          <img class="absolute top-6 right-6" src="./assets/pattern-illustrations.svg" alt="">
+          <h3 class="absolute left-6 bottom-6">Illustrations</h3></div>
+        <div class="relative rounded-lg h-[182px] col-span-2 xl:h-[158px] bg-darkpurple">
+          <img class="absolute top-6 right-6" src="./assets/pattern-motion-graphics.svg" alt="">
+          <h3 class="absolute left-6 bottom-6">Motion Graphics</h3></div>
+      </div>
   </section>
-
-  
-
-
-  Graphic Design
-  UI/UX
-  Apps
-  Photography
-  Illustrations
-  Motion Graphics
-
-  I’m Amy, and I’d love to work on your next project
-
-  I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations 
-  to complete mobile apps. I’m also handy with a camera!
-
-  Free Consultation
-
-  My Work
-
-  Book a call with me
-
-  I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a 
-  free consultation. Then we can move forward from there.
-
-  Free Consultation
-
-  Free Consultation
-
+  <section class="about container mx-auto max-w-[1190px] flex flex-col items-center md:flex-row md:justify-between">
+    <div class="img-cont h-[300px] md:h-[364px] md:w-1/2 md:-ml-11 lg:h-[445px] lg:ml-0 lg:pl-10">
+      <img class="h-full " src="./assets/image-amy.webp" alt="">
+    </div>
+    <div class="text-cont text-center max-w-[520px] px-4 mt-10 md:w-1/2 md:text-left md:mt-0 md:pl-1.5 md:pr-10 lg:max-w-full">
+      <h2 class="font-bold text-black text-[26px] leading-[33px] md:text-[32px] md:leading-10
+      lg:text-[40px] lg;leading-[50px]">I’m Amy, and I’d love to work on your next project</h2>
+      <p class="text-grey text-base leading-[26px] my-6 md:text-[18px] md:leading-[28px]
+      lg:mt-[34px] lg:mb-8">I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations 
+        to complete mobile apps. I’m also handy with a camera!</p>
+      <button class="h-11 w-44 md:h-14 md:w-[228px] bg-coral rounded-full text-cream font-bold text-sm md:text-base
+      hover:bg-tangerine duration-300" >Free Consultation</button>
+    </div>
+  </section>
+  <section class="carousel w-full flex flex-col gap-8 md:gap-14 my-[100px] md:my-[120px] lg:my-[88px]">
+    <h3 class="font-bold text-2xl text-center leading-[30px] md:text-[32px] md:leading-10">My Work</h3>
+    <div class="images w-full box-border flex flex-row justify-center gap-[15px] md:gap-[30px] overflow-hidden">
+      <img  src="./assets/image-slide-1.jpg" alt="">
+      <img  src="./assets/image-slide-2.jpg" alt="">
+      <img  src="./assets/image-slide-3.jpg" alt="">
+      <img  src="./assets/image-slide-4.jpg" alt="">
+      <img  src="./assets/image-slide-5.jpg" alt="">
+    </div>
+    <div class="arrows flex flex-row gap-4 justify-center">
+      <div class="prev arrow w-16 h-16 bg-black rounded-full flex flex-row items-center justify-center hover:bg-purple duration-300"><img src="./assets/icon-arrow-left.svg" alt=""></div>
+      <div class="next arrow w-16 h-16 bg-black rounded-full flex flex-row items-center justify-center hover:bg-purple duration-300"><img src="./assets/icon-arrow-right.svg" alt=""></div>
+    </div>
+  </section>
+  <section class="booking container mx-auto max-w-[1190px] px-4 sm:px-6 md:px-10">
+    <div class="bg-black rounded-[10px] text-cream text-center flex flex-col items-center lg:flex-row lg:text-left lg:justify-between
+    px-6 sm:px-8 md:px-10 ld:pl-[64px] lg:pr-[96px] py-12 md:pt-14 md:pb-16 lg:py-20">
+      <div class="text-wrapper max-w-[540px]">
+        <h3 class="font-bold text-[26px] leading-[33px] md:text-[32px] md:leading-10 lg:text-[40px] lg:leading-[50px]">Book a call with me</h3>
+        <p class="text-base leading-[26px] my-6 lg:mb-0 md:text-[18px] md:leading-[28px]">I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a 
+          free consultation. Then we can move forward from there.</p>
+      </div>
+      <button class="h-11 w-44 md:h-14 md:w-[228px] bg-coral rounded-full text-cream font-bold text-sm md:text-base
+      hover:bg-tangerine duration-300" >Free Consultation</button>
+    </div>
+  </section>
+  <footer class="container mx-auto max-w-[1190px] px-4 pt-10 pb-8 sm:p-6 md:px-10 md:py-14 lg:pb-16">
+    <div class="flex flex-row justify-between items-center h-12">
+      <img class="h-full"  src="./assets/logo.svg" alt="">
+      <button class="h-11 w-44 md:h-14 md:w-[228px] bg-black rounded-full text-cream font-bold text-sm md:text-base
+      hover:bg-purple duration-300" >Free Consultation</button>
+    </div>
+  </footer>
 </body>
+<script src="./script.js"></script>
 </html>
